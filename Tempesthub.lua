@@ -8,7 +8,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local VIM = game:GetService("VirtualInputManager")
-local LP = game.Players.LocalPlayer 
+local LP = game.Players.LocalPlayer
 _G.AutoFarm = false
 local MyIslandPos = nil
 
@@ -35,7 +35,7 @@ MainTab:CreateToggle({
                      if not n:find("penjual") and not n:find("quest") then
                         local ERoot = v.Parent:FindFirstChild("HumanoidRootPart")
                         if ERoot and (ERoot.Position - MyIslandPos).Magnitude < 800 then
-                           LP.Character.HumanoidRootPart.CFrame = ERoot.CFrame * CFrame.new(0, 12, 0) * CFrame.Angles(math.rad(-90), 0, 0)
+                           LP.Character.HumanoidRootPart.CFrame = ERoot.CFrame * CFrame.new(0, 20, 0) * CFrame.Angles(math.rad(-90), 0, 0)
                            local tools = LP.Backpack:GetChildren()
                            if tools[2] then LP.Character.Humanoid:EquipTool(tools[2]) end
                            AutoDamage()
