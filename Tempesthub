@@ -8,7 +8,7 @@ local Window = Rayfield:CreateWindow({
 })
 
 local VIM = game:GetService("VirtualInputManager")
-local LP = game.Players.LocalPlayer
+local LP = game.Players.LocalPlayer 
 _G.AutoFarm = false
 local MyIslandPos = nil
 
