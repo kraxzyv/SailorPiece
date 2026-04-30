@@ -34,8 +34,8 @@ MainTab:CreateToggle({
                      local n = v.Parent.Name:lower()
                      if not n:find("penjual") and not n:find("quest") then
                         local ERoot = v.Parent:FindFirstChild("HumanoidRootPart")
-                        if ERoot and (ERoot.Position - MyIslandPos).Magnitude < 800 then
-                           LP.Character.HumanoidRootPart.CFrame = ERoot.CFrame * CFrame.new(0, 20, 0) * CFrame.Angles(math.rad(-90), 0, 0)
+                        if ERoot and (ERoot.Position - MyIslandPos).Magnitude < 400 then
+                           LP.Character.HumanoidRootPart.CFrame = ERoot.CFrame * CFrame.new(0, 15, 0) * CFrame.Angles(math.rad(-90), 0, 0)
                            local tools = LP.Backpack:GetChildren()
                            if tools[2] then LP.Character.Humanoid:EquipTool(tools[2]) end
                            AutoDamage()
