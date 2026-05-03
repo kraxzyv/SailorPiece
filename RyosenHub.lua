@@ -1,8 +1,8 @@
 local Rayfield = loadstring(game:HttpGet('https://sirius.menu/rayfield'))()
 
 local Window = Rayfield:CreateWindow({
-   Name = "Tempest Hub | Sailor Piece (No Key)",
-   LoadingTitle = "Tempest Hub Loading...",
+   Name = "Ryosen Hub | Sailor Piece (No Key)",
+   LoadingTitle = "Ryosen Hub Loading...",
    LoadingSubtitle = "by Kraxzyv",
    KeySystem = false
 })
